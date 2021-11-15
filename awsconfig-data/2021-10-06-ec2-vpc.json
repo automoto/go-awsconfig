@@ -1,0 +1,80 @@
+{
+  "configurationItemDiff":
+  {
+    "changedProperties":
+    {},
+    "changeType": "CREATE"
+  },
+  "configurationItem":
+  {
+    "relatedEvents": [],
+    "relationships": [
+      {
+        "resourceId": "vpc-00e33b8c2a8f5cc09",
+        "resourceName": null,
+        "resourceType": "AWS::EC2::VPC",
+        "name": "Is contained in Vpc"
+      }],
+    "configuration":
+    {
+      "description": "Allow HTTP traffic to instances through Elastic Load Balancer",
+      "groupName": "elb_http",
+      "ipPermissions": [
+        {
+          "fromPort": 80,
+          "ipProtocol": "tcp",
+          "ipv6Ranges": [],
+          "prefixListIds": [],
+          "toPort": 80,
+          "userIdGroupPairs": [],
+          "ipv4Ranges": [
+            {
+              "cidrIp": "0.0.0.0/0"
+            }],
+          "ipRanges": ["0.0.0.0/0"]
+        }],
+      "ownerId": "155555555555",
+      "groupId": "sg-0ca8224f15e832a29",
+      "ipPermissionsEgress": [
+        {
+          "ipProtocol": "-1",
+          "ipv6Ranges": [],
+          "prefixListIds": [],
+          "userIdGroupPairs": [],
+          "ipv4Ranges": [
+            {
+              "cidrIp": "0.0.0.0/0"
+            }],
+          "ipRanges": ["0.0.0.0/0"]
+        }],
+      "tags": [
+        {
+          "key": "Name",
+          "value": "Allow HTTP through ELB Security Group"
+        }],
+      "vpcId": "vpc-00e33b8c2a8f5cc09"
+    },
+    "supplementaryConfiguration":
+    {},
+    "tags":
+    {
+      "Name": "Allow HTTP through ELB Security Group"
+    },
+    "configurationItemVersion": "1.3",
+    "configurationItemCaptureTime": "2021-10-06T09:02:22.117Z",
+    "configurationStateId": 1633510942117,
+    "awsAccountId": "155555555555",
+    "configurationItemStatus": "ResourceDiscovered",
+    "resourceType": "AWS::EC2::SecurityGroup",
+    "resourceId": "sg-0ca8224f15e832a29",
+    "resourceName": "elb_http",
+    "ARN": "arn:aws:ec2:us-west-2:155555555555:security-group/sg-0ca8224f15e832a29",
+    "awsRegion": "us-west-2",
+    "availabilityZone": "Not Applicable",
+    "configurationStateMd5Hash": "",
+    "resourceCreationTime": null
+  },
+  "notificationCreationTime": "2021-10-06T09:02:22.786Z",
+  "messageType": "ConfigurationItemChangeNotification",
+  "recordVersion": "1.3"
+}

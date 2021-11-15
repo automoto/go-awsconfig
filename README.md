@@ -1,2 +1,9 @@
-# go-awsconfig
-golang library for awsconfig
+## go-awsconfig
+golang library for processing awsconfig events.
+
+Supported Resources:
+- ec2
+- elbv2
+- elb
+- vpc
+

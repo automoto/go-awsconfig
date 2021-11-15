@@ -1,0 +1,166 @@
+{
+  "configurationItemDiff":
+  {
+    "changedProperties":
+    {
+      "Relationships.0":
+      {
+        "previousValue":
+        {
+          "resourceId": "subnet-0e93ce2392047713e",
+          "resourceName": null,
+          "resourceType": "AWS::EC2::Subnet",
+          "name": "Is attached to "
+        },
+        "updatedValue": null,
+        "changeType": "DELETE"
+      },
+      "SupplementaryConfiguration.Tags":
+      {
+        "previousValue": [],
+        "updatedValue": null,
+        "changeType": "DELETE"
+      },
+      "Relationships.2":
+      {
+        "previousValue":
+        {
+          "resourceId": "subnet-01e932128dbed7f6c",
+          "resourceName": null,
+          "resourceType": "AWS::EC2::Subnet",
+          "name": "Is attached to "
+        },
+        "updatedValue": null,
+        "changeType": "DELETE"
+      },
+      "Relationships.1":
+      {
+        "previousValue":
+        {
+          "resourceId": "sg-0f1232613dae2c897",
+          "resourceName": null,
+          "resourceType": "AWS::EC2::SecurityGroup",
+          "name": "Is associated with "
+        },
+        "updatedValue": null,
+        "changeType": "DELETE"
+      },
+      "SupplementaryConfiguration.LoadBalancerPolicies":
+      {
+        "previousValue": [],
+        "updatedValue": null,
+        "changeType": "DELETE"
+      },
+      "Configuration":
+      {
+        "previousValue":
+        {
+          "loadBalancerName": "web-elb",
+          "canonicalHostedZoneName": "web-elb-676065294.us-west-2.elb.amazonaws.com",
+          "canonicalHostedZoneNameID": "Z1H1FL5HABSF5",
+          "listenerDescriptions": [
+            {
+              "listener":
+              {
+                "protocol": "HTTP",
+                "loadBalancerPort": 80,
+                "instanceProtocol": "HTTP",
+                "instancePort": 80
+              },
+              "policyNames": []
+            }],
+          "policies":
+          {
+            "appCookieStickinessPolicies": [],
+            "otherPolicies": [],
+            "lbcookieStickinessPolicies": []
+          },
+          "backendServerDescriptions": [],
+          "availabilityZones": ["us-west-2b", "us-west-2a"],
+          "subnets": ["subnet-01e932128dbed7f6c", "subnet-0e93ce2392047713e"],
+          "sourceSecurityGroup":
+          {
+            "ownerAlias": "155555555555",
+            "groupName": "elb_http"
+          },
+          "securityGroups": ["sg-0f1232613dae2c897"],
+          "createdTime": 1633363261310,
+          "scheme": "internet-facing",
+          "dnsname": "web-elb-676065294.us-west-2.elb.amazonaws.com",
+          "vpcid": "vpc-020dc8cc82992e09c"
+        },
+        "updatedValue": null,
+        "changeType": "DELETE"
+      },
+      "Relationships.3":
+      {
+        "previousValue":
+        {
+          "resourceId": "vpc-020dc8cc82992e09c",
+          "resourceName": null,
+          "resourceType": "AWS::EC2::VPC",
+          "name": "Is contained in "
+        },
+        "updatedValue": null,
+        "changeType": "DELETE"
+      },
+      "SupplementaryConfiguration.LoadBalancerAttributes":
+      {
+        "previousValue":
+        {
+          "crossZoneLoadBalancing":
+          {
+            "enabled": true
+          },
+          "accessLog":
+          {
+            "enabled": false
+          },
+          "connectionDraining":
+          {
+            "enabled": false,
+            "timeout": 300.0
+          },
+          "connectionSettings":
+          {
+            "idleTimeout": 60.0
+          },
+          "additionalAttributes": [
+            {
+              "key": "elb.http.desyncmitigationmode",
+              "value": "defensive"
+            }]
+        },
+        "updatedValue": null,
+        "changeType": "DELETE"
+      }
+    },
+    "changeType": "DELETE"
+  },
+  "configurationItem":
+  {
+    "relatedEvents": [],
+    "relationships": [],
+    "configuration": null,
+    "supplementaryConfiguration":
+    {},
+    "tags":
+    {},
+    "configurationItemVersion": "1.3",
+    "configurationItemCaptureTime": "2021-10-04T16:05:01.344Z",
+    "configurationStateId": 1633363501344,
+    "awsAccountId": "155555555555",
+    "configurationItemStatus": "ResourceDeleted",
+    "resourceType": "AWS::ElasticLoadBalancing::LoadBalancer",
+    "resourceId": "web-elb",
+    "resourceName": "web-elb",
+    "ARN": "arn:aws:elasticloadbalancing:us-west-2:155555555555:loadbalancer/web-elb",
+    "awsRegion": "us-west-2",
+    "availabilityZone": null,
+    "configurationStateMd5Hash": "",
+    "resourceCreationTime": null
+  },
+  "notificationCreationTime": "2021-10-04T16:05:03.079Z",
+  "messageType": "ConfigurationItemChangeNotification",
+  "recordVersion": "1.3"
+}

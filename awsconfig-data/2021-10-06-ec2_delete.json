@@ -1,0 +1,98 @@
+{
+  "configurationItemDiff":
+  {
+    "changedProperties":
+    {
+      "Relationships.0":
+      {
+        "previousValue":
+        {
+          "resourceId": "i-08cd48b7c8eed943d",
+          "resourceName": null,
+          "resourceType": "AWS::EC2::Instance",
+          "name": "Is associated with Instance"
+        },
+        "updatedValue": null,
+        "changeType": "DELETE"
+      }
+    },
+    "changeType": "UPDATE"
+  },
+  "configurationItem":
+  {
+    "relatedEvents": [],
+    "relationships": [
+      {
+        "resourceId": "eni-09618da4ec42f5866",
+        "resourceName": null,
+        "resourceType": "AWS::EC2::NetworkInterface",
+        "name": "Is associated with NetworkInterface"
+      },
+      {
+        "resourceId": "i-0542955aaa92a9314",
+        "resourceName": null,
+        "resourceType": "AWS::EC2::Instance",
+        "name": "Is associated with Instance"
+      },
+      {
+        "resourceId": "vpc-11999669",
+        "resourceName": null,
+        "resourceType": "AWS::EC2::VPC",
+        "name": "Is contained in Vpc"
+      }],
+    "configuration":
+    {
+      "description": "default VPC security group",
+      "groupName": "default",
+      "ipPermissions": [
+        {
+          "ipProtocol": "-1",
+          "ipv6Ranges": [],
+          "prefixListIds": [],
+          "userIdGroupPairs": [
+            {
+              "groupId": "sg-baef1bb1",
+              "userId": "155555555555"
+            }],
+          "ipv4Ranges": [],
+          "ipRanges": []
+        }],
+      "ownerId": "155555555555",
+      "groupId": "sg-baef1bb1",
+      "ipPermissionsEgress": [
+        {
+          "ipProtocol": "-1",
+          "ipv6Ranges": [],
+          "prefixListIds": [],
+          "userIdGroupPairs": [],
+          "ipv4Ranges": [
+            {
+              "cidrIp": "0.0.0.0/0"
+            }],
+          "ipRanges": ["0.0.0.0/0"]
+        }],
+      "tags": [],
+      "vpcId": "vpc-11999669"
+    },
+    "supplementaryConfiguration":
+    {},
+    "tags":
+    {},
+    "configurationItemVersion": "1.3",
+    "configurationItemCaptureTime": "2021-10-06T09:32:23.900Z",
+    "configurationStateId": 1633512743900,
+    "awsAccountId": "155555555555",
+    "configurationItemStatus": "OK",
+    "resourceType": "AWS::EC2::SecurityGroup",
+    "resourceId": "sg-baef1bb1",
+    "resourceName": "default",
+    "ARN": "arn:aws:ec2:us-west-2:155555555555:security-group/sg-baef1bb1",
+    "awsRegion": "us-west-2",
+    "availabilityZone": "Not Applicable",
+    "configurationStateMd5Hash": "",
+    "resourceCreationTime": null
+  },
+  "notificationCreationTime": "2021-10-06T09:32:24.161Z",
+  "messageType": "ConfigurationItemChangeNotification",
+  "recordVersion": "1.3"
+}
